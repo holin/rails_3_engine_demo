@@ -72,4 +72,6 @@ P.S. Special thanks to Chrispy for helping figure out the application_controller
 
 * visit http://localhost:3000/cheese/syncs/new?kind=qq
 * visit http://localhost:3000/cheese/syncs/new?kind=sina
-
+* Send Status
+** token = Cheese::Token.find_by_kind("qq"); client = OauthChina::Qq.load(:access_token => token.token, :access_token_secret => token.secret);client.add_status(content)
+** token = Cheese::Token.find_by_kind("sina"); client = OauthChina::Sina.load(:access_token => token.token, :access_token_secret => token.secret);client.add_status(content)
