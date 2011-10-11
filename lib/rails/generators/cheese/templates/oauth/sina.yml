@@ -1,0 +1,10 @@
+development: 
+   key:    "180707933" 
+   secret: "fa1d564c57d64feb821590e6401d9a5f" 
+   url:    "http://localhost:3000" 
+   callback: "http://localhost:3000/cheese/syncs/callback?kind=sina"
+production: 
+   key:    "180707933" 
+   secret: "fa1d564c57d64feb821590e6401d9a5f" 
+   url:    "http://192.168.11.108:3456" 
+   callback: "http://192.168.11.108:3456/cheese/syncs/callback?kind=sina"

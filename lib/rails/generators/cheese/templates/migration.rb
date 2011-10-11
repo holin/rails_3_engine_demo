@@ -4,6 +4,6 @@ class CreateCheeseTables < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :cheese_widgets
+    drop_table :cheese_tokens
   end
 end

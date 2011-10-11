@@ -42,6 +42,10 @@ class CheeseGenerator < Rails::Generators::Base
   def copy_initializer_file
     copy_file 'initializer.rb', 'config/initializers/cheese.rb'
   end
+  
+  def copy_oauth_config_file
+    directory "oauth", "config/oauth"
+  end
 
   def update_application_template
     f = File.open "app/views/layouts/application.html.erb"

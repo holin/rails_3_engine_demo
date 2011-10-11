@@ -5,7 +5,7 @@ module Cheese
     extend ActiveSupport::Concern
 
     included do
-      before_filter :test_controller_instance_method
+      # before_filter :test_controller_instance_method
     end
 
     module InstanceMethods

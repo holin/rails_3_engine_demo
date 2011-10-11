@@ -1,0 +1,10 @@
+development: 
+   key:    "db8b28a2b7354bd9800b1863484e78e8" 
+   secret: "5d31e867b0ea5397a0656b8720c5b006" 
+   url:    "http://localhost:3000" 
+   callback: "http://localhost:3000/cheese/syncs/callback?kind=qq"
+production: 
+   key:    "db8b28a2b7354bd9800b1863484e78e8" 
+   secret: "5d31e867b0ea5397a0656b8720c5b006" 
+   url:    "http://192.168.11.108:3456" 
+   callback: "http://192.168.11.108:3456/cheese/syncs/callback?kind=qq"

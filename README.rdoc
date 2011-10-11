@@ -54,3 +54,22 @@ Lastly, let's package up your engine as a real gem. You’ll need Jeweler instal
 Now you’re ready to start customizing this engine for your own purposes. Do a global find in your engine directory and replace every instance of "cheese" and "Cheese" with your engine name (be sure to preserve capitalization). Likewise, rename every directory and file that’s named "cheese" with your engine name. I should really automate this but I haven’t figured out how to create a rake task that I can run from within the engine directory itself.
 
 P.S. Special thanks to Chrispy for helping figure out the application_controller includes!
+
+
+
+== Add by holin 
+
+* [edit Gemfile, add line: ] gem 'oauth' 
+* [edit Gemfile, add line: ] gem 'oauth_china', :git => 'git://github.com/holin/oauth_china.git'
+* [edit Gemfile, add line: ] gem 'cheese', :path => "../rails_3_engine_demo"
+* rails generate cheese
+* [examine config/initializers/cheese.rb to see basic config parameters]
+* rake db:migrate (one of the migrations that you’ll see run came from the engine)
+* [edit config/oauth/qq.yml]
+* [edit config/oauth/sina.yml]
+
+==== Usage
+
+* visit http://localhost:3000/cheese/syncs/new?kind=qq
+* visit http://localhost:3000/cheese/syncs/new?kind=sina
+
